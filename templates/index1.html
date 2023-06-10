@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>FACE RECOGNITION + ATTENDANCE PROJECT</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <script src="css/jquery.min.js"></script>
+  <script src="css/popper.min.js"></script>
+  <script src="css/bootstrap.min.js"></script>
+  <script src="css/64d58efce2.js"></script>
+  <style>
+    html,
+    body,
+    .intro {
+      height: 100%;
+    }
+
+    table td,
+    table th {
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
+    }
+
+    .card {
+      border-radius: .5rem;
+    }
+
+    .mask-custom {
+      background: rgba(24, 24, 16, .2);
+      border-radius: 2em;
+      backdrop-filter: blur(25px);
+      border: 2px solid rgba(255, 255, 255, 0.05);
+      background-clip: padding-box;
+      box-shadow: 10px 10px 10px rgba(46, 54, 68, 0.03);
+    }
+  </style>
+</head>
+
+<body>
+  <!-- As a link -->
+  <nav class="navbar navbar-light " style="background-color: #72a4c7;">
+    <a class="navbar-brand" style="margin-left: 600px;" href="#"><h1> FACE RECOGNITION</h1> </a>
+    <div class="mx-auto" >
+      <a href="/logout">
+       <button type="button" class="btn btn-danger" style="margin-left:400px ;" >Logout</button>
+    </a>
+    </div>
+  </nav>
+
+  <br>
+  <div class="mx-auto" style="width: 700px;">
+    <img src="{{ url_for('video_feed') }}" alt="Video Feed">
+
+  </div>
+
+  <br><br>
+
+
+
+
+
+
+  <br><br>
+  <div class="mx-auto" style="width: 150px;">
+    <a href="http://127.0.0.1:5000/attend">
+      <button type="button" class="btn btn-success">Go To ATTENDANCE</button>
+    </a>
+  </div>
+</body>
+</html>

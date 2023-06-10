@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Home</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<!-- As a link -->
+<nav class="navbar navbar-light " style="background-color: #72a4c7;">
+  <a class="navbar-brand" style="margin-left:500px ;" href="#"><h1> RECOGNITION + ATTENDANCE</h1> </a>
+  <div class="mx-auto" >
+    <a href="/logout">
+     <button type="button" class="btn btn-danger" style="margin-left:300px ;" >Logout</button>
+  </a>
+  </div>
+</nav>
+
+<div class="container" style="max-width: 300px;">
+  
+  <br><br>
+
+  <form action="/success" method="post" enctype="multipart/form-data">
+
+ <div class="input-group mb-5" >
+  
+  <input type="text" name="name" class="form-control" placeholder="Enter your Roll No">
+ </div>
+ <div class="input-group mb-5" >
+
+  <input type="file" name="file" class="form-control" id="inputGroupFile02">
+
+ </div>
+
+ <div class="input-group mb-5">
+ <div class="col-auto" style="margin: auto;">
+  <button type="submit" value="Upload" class="btn btn-primary mb-3">Submit</button>
+</div>
+ </div>
+</form>
+</div>
+
+
+
+<div class="mx-auto" style="width: 150px;">
+  <a href="/index">
+   <button type="button" class="btn btn-success">Take Attendance</button>
+</a>
+</div>
+
+
+
+</body>
+</html>
